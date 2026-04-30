@@ -19,8 +19,38 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
+    .whats-chat {
+    position: fixed;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    z-index: 1050;
+    font-family: 'JFFlat';
+}
+.whats-chat .icon {
+    display: block;
+    border-radius: 0 !important;
+    color: #fff !important;
+    width: 100% !important;
+    height: 62px !important;
+    background: #2BB141 !important;
+    border: 0 !important;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 12px;
+    padding: 15px 10px;
+    white-space: nowrap;
+}
+.whats-chat .icon i::after {
+    content: " راسالنا على الواتس اب";
+    color: #fff;
+    font-size: 30px;
+    font-family: DroidKufi !important;
+}
+.whats-chat .icon i {
+    font-size: 30px;
+}
     :root {
-            /* --primary: #149ddd; 
+            /* --primary: #e83e8c; 
             --bg: #050505;
             --glass: rgba(255, 255, 255, 0.03); */
             --cube-color: #25d366;
@@ -32,7 +62,7 @@
         .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 35px; margin-top: 50px; }
         .project-card { background: var(--glass); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 28px; overflow: hidden; backdrop-filter: blur(20px); opacity: 0; transform: translateY(40px); transition: 0.4s; }
         .project-card {
-            border-color: #149ddd;
+            border-color: #e83e8c;
         }
           .project-card:hover {
             transform: translateY(-15px);
@@ -49,8 +79,8 @@
         .project-info { padding: 25px; }
 .btn-link {
             padding: 12px 20px;
-            border: 1px solid #149ddd;
-            color: #149ddd;
+            border: 1px solid #e83e8c;
+            color: #e83e8c;
             text-decoration: none;
             border-radius: 12px;
             font-size: 0.9rem;
@@ -60,7 +90,7 @@
         }
 
         .btn-link:hover {
-            background: #149ddd;
+            background: #e83e8c;
             color: #fff;
             box-shadow: 0 0 20px rgba(57, 255, 20, 0.6);
         }
@@ -109,18 +139,18 @@
         <div class="top-sidebar">
             <div class="box">
                 <div class="content-animat">
-                    <img src="./files/profile.png">
+                    <img src="./me.png">
 
                 </div>
             </div>
             <h3><span>M</span>ariam <span>A</span>lamssi</h3>
             <div class="linkat">
 
-                <div class="div-link-sos">  <a href="https://www.facebook.com/tark.abdelbast/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
-                <div class="div-link-sos">   <a href="https://wa.me/201020882301" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
-                <div class="div-link-sos">   <a href="https://www.facebook.com/tark.abdelbast/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
-                <div class="div-link-sos">  <a href="https://github.com/Ahmed-Abdelbast/" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-                <div class="div-link-sos">  <a href="https://www.linkedin.com/in/ahmed-abdelbast-6106aa262/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                <div class="div-link-sos">  <a href="https://www.facebook.com/mrimamsi/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="div-link-sos">   <a href="https://wa.me/972598695954" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
+                <div class="div-link-sos">   <a href="https://www.instagram.com/merriamamsi/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="div-link-sos">  <a href="https://github.com/mrim-amsi/" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                <div class="div-link-sos">  <a href="https://www.linkedin.com/in/merriam-amsi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
                
             </div>
 
@@ -132,7 +162,6 @@
                 <li><a class="active" href="#home"><i class="fa-solid fa-home"></i>الرئيسية</a></li>
                 <li><a href="#about" class=""><i class="fa-solid fa-user"></i>من أنا</a></li>
                 <li><a href="#portfolio" class=""><i class="fa-solid fa-address-book"></i>المشاريع</a></li>
-                <li><a href="#services" class=""><i class="fa-solid fa-server"></i>الخدمات</a></li>
                 <li><a href="#contact" class=""><i class="fa-solid fa-envelope"></i>تواصل</a></li>
             </ul>
         </div>
@@ -148,7 +177,7 @@
                 <span class="cursor">&nbsp;</span>
             </p>
 
-            <p class="border-5 shadow-lg border-end border-start rounded-3 border-info w-75 text-center mt-5 downcs">
+            <p class="border-5 shadow-lg border-end border-start rounded-3  w-75 text-center mt-5 downcs">
                
                     <a target="_blank" href="https://mrim-amsi.github.io/myportfolio/image/cv.pdf" download="mariam-alamssi-cv.pdf" class="text-white fs-3">تحميل السيرة الذاتية</a>
                
@@ -187,37 +216,37 @@
                         <div class="col-md-4 col-lg-3   col-sm-6">
                          <div class="d-flex  bg-white shadow-lg  justify-content-around align-items-center  rounded-3 p-3 ps-5 pe-5">
                             <i class="fa-brands fa-laravel text-danger skillSize pe-4"></i>
-                            <p class="align-items-end m-0 fw-bold">Laravel</p>
+                            <p class="align-items-end m-0 fw-bold"> Laravel </p>
                         </div>
                     </div>
                      <div class="col-md-4 col-lg-3   col-sm-6">
                          <div class="d-flex  bg-white shadow-lg  justify-content-around align-items-center  rounded-3 p-3 ps-5 pe-5">
                             <i class="fa-brands fa-react text-info   skillSize pe-4"></i>
-                            <p class="align-items-end m-0 fw-bold">React</p>
+                            <p class="align-items-end m-0 fw-bold"> React </p>
                         </div>
                     </div>
                     <div class="col-md-4 col-lg-3 col-sm-6">
                         <div class="d-flex  bg-white  shadow-lg  justify-content-around align-items-center  rounded-3 p-3 ps-5 pe-5">
-                            <i class="fa-brands fa-html5 text-danger skillSize pe-4"></i>
-                            <p class="align-items-end m-0 fw-bold">HTML5</p>
+                            <i class="fa-brands fa-wordpress bootstrapColor skillSize pe-4"></i>
+                            <p class="align-items-end m-0 fw-bold"> WordPress </p>
                         </div>
                     </div>
                     <div class="col-md-4 col-lg-3 col-sm-6">
                          <div class="d-flex  bg-white shadow-lg  justify-content-around align-items-center  rounded-3 p-3 ps-5 pe-5">
                             <i class="fa-brands fa-css3 text-info skillSize pe-4"></i>
-                            <p class="align-items-end m-0 fw-bold">CSS3</p>
+                            <p class="align-items-end m-0 fw-bold"> CSS3 </p>
                         </div>
                     </div>
                     <div class="  col-md-4 col-lg-3 col-sm-6">
                          <div class="d-flex  bg-white shadow-lg justify-content-around align-items-center  rounded-3 p-3 ps-5 pe-5">
                             <i class="fa-brands fa-js-square text-warning skillSize pe-4"></i>
-                            <p class="align-items-end m-0 fw-bold">JavaScript</p>
+                            <p class="align-items-end m-0 fw-bold"> JavaScript </p>
                         </div>
                     </div>
                     <div class="col-md-4 col-lg-3   col-sm-6">
                          <div class="d-flex  bg-white shadow-lg  justify-content-around align-items-center  rounded-3 p-3 ps-5 pe-5">
                             <i class="fa-brands fa-bootstrap bootstrapColor  skillSize pe-4"></i>
-                            <p class="align-items-end m-0 fw-bold">Bootstrap5</p>
+                            <p class="align-items-end m-0 fw-bold"> Bootstrap5 </p>
                         </div>
                     </div>
                     
@@ -430,172 +459,6 @@
     <!-- protfileo end -->
 
 
-    <!-- services start -->
-    <section class="services" id="services">
-        <div class="mg-left">
-            <div class="top-sec">
-                <h3>services</h3>
-            </div>
-            <div class="servs-content"> <!-- showscal -->
-                
-                <div class="sec-wep">
-
-                        <div class="ad team-slider swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                            <div class="swiper-wrapper" id="swiper-wrapper-89df4d9966481a0b" aria-live="off" style="transform: translate3d(-1508.33px, 0px, 0px); transition-duration: 0ms;"><div class="box-swpr swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 4" style="width: 281.667px; margin-right: 20px;">
-                                    
-                                    <div class="icon-title">
-                                        <img src="./files/code.png" alt="code-image">
-                                        <h4>Clean Code</h4>
-                                        <p>Clean &amp; well commented codes structured and easy to understand</p>
-                                    </div>
-
-                                </div><div class="box-swpr swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" role="group" aria-label="3 / 4" style="width: 281.667px; margin-right: 20px;">
-                                    
-                                    <div class="icon-title">
-                                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                        <h4>Animation</h4>
-                                        <p>Create beautiful, easy and eye-friendly animations</p>
-                                    </div>
-
-                                </div><div class="box-swpr swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 281.667px; margin-right: 20px;">
-                                    
-                                    <div class="icon-title">
-                                        <img src="./files/botstrap.png" alt="bootstrap">
-                                        <h4>Built with Bootstrap</h4>
-                                        <p>Kainzy has the pure Bootstrap 5.1.3 framework crafted, clean, smart &amp; creative design.</p>
-                                    </div>
-
-                                </div>
-
-                                <div class="box-swpr swiper-slide" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 281.667px; margin-right: 20px;">
-
-                                    <div class="icon-title">
-                                        <img src="./files/respons.png" alt="response">
-                                        <h4>Fully Responsive</h4>
-                                        <p>Kainzy is fully responsive and comes with Bootstrap Framework</p>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="box-swpr swiper-slide swiper-slide-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 4" style="width: 281.667px; margin-right: 20px;">
-                                    
-                                    <div class="icon-title">
-                                        <img src="./files/code.png" alt="code-image">
-                                        <h4>Clean Code</h4>
-                                        <p>Clean &amp; well commented codes structured and easy to understand</p>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="box-swpr swiper-slide swiper-slide-active" data-swiper-slide-index="2" role="group" aria-label="3 / 4" style="width: 281.667px; margin-right: 20px;">
-                                    
-                                    <div class="icon-title">
-                                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                        <h4>Animation</h4>
-                                        <p>Create beautiful, easy and eye-friendly animations</p>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="box-swpr swiper-slide swiper-slide-next" data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 281.667px; margin-right: 20px;">
-                                    
-                                    <div class="icon-title">
-                                        <img src="./files/botstrap.png" alt="bootstrap">
-                                        <h4>Built with Bootstrap</h4>
-                                        <p>Kainzy has the pure Bootstrap 5.1.3 framework crafted, clean, smart &amp; creative design.</p>
-                                    </div>
-
-                                </div>
-
-                        
-
-                            <div class="box-swpr swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 281.667px; margin-right: 20px;">
-
-                                    <div class="icon-title">
-                                        <img src="./files/respons.png" alt="response">
-                                        <h4>Fully Responsive</h4>
-                                        <p>Kainzy is fully responsive and comes with Bootstrap Framework</p>
-                                    </div>
-
-                                </div><div class="box-swpr swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 4" style="width: 281.667px; margin-right: 20px;">
-                                    
-                                    <div class="icon-title">
-                                        <img src="./files/code.png" alt="code-image">
-                                        <h4>Clean Code</h4>
-                                        <p>Clean &amp; well commented codes structured and easy to understand</p>
-                                    </div>
-
-                                </div><div class="box-swpr swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" role="group" aria-label="3 / 4" style="width: 281.667px; margin-right: 20px;">
-                                    
-                                    <div class="icon-title">
-                                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                        <h4>Animation</h4>
-                                        <p>Create beautiful, easy and eye-friendly animations</p>
-                                    </div>
-
-                                </div></div>
-
-                            <div class="swiper-button-wp">
-                                <div class="swiper-button-prev swiper-button" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-89df4d9966481a0b" fdprocessedid="3mm0t">
-                                    <i class="uil uil-angle-left"></i>
-                                </div>
-
-                                <div class="swiper-button-next swiper-button" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-89df4d9966481a0b" fdprocessedid="ldqdln">
-                                    <i class="uil uil-angle-right"></i>
-                                </div>
-                                
-                            </div>
-                            <div class="swiper-pagination mg-bot swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                        
-                </div>
-              
-        </div>
-        
-                <!-- Certificates start -->
-   
-
-    <!-- Certificates end -->
-        </div>
-
-        <!-- <div class="Certificates" id="Certificates">
-            <div class="mg-left">
-                <div class="top-sec">
-                    <h3>Certificates</h3>
-                </div>
-                <div class="certif">
-    
-                    <div class="testimonial mySwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-    
-                        <div class="testi-content swiper-wrapper" style="cursor: grab; transform: translate3d(-1510px, 0px, 0px); transition-duration: 0ms;" id="swiper-wrapper-cf0f313b69bf9326" aria-live="off"><div class="slide swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 1" style="width: 755px;">
-                                <img class="image" src="./files/certificate.png" alt="Route-Academy-certificate">
-                            </div>
-    
-    
-                            <div class="slide swiper-slide swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="0" role="group" aria-label="1 / 1" style="width: 755px;">
-                                <img class="image" src="./files/certificate.png" alt="Route-Academy-certificate">
-                            </div>
-    
-
-    
-    
-                        <div class="slide swiper-slide swiper-slide-duplicate swiper-slide-active swiper-slide-duplicate-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 1" style="width: 755px;">
-                                <img class="image" src="./files/certificate.png" alt="Route-Academy-certificate">
-                            </div></div>
-                        <div class="swiper-paginationn swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span></div>
-    
-                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-    
-    
-                </div>
-            </div>
-        </div> -->
-    </section>
-
-    <!-- services end -->
 
 
 
@@ -619,11 +482,11 @@
                         <div class="cube-face face-top"><i class="fab fa-whatsapp"></i></div>
                         <div class="cube-face face-front"></div><div class="cube-face face-right"></div>
                     </a>
-                    <a href="https://www.facebook.com/alien.tech.1" target="_blank" class="social-cube-wrapper facebook">
+                    <a href="https://www.facebook.com/mrimamsi/" target="_blank" class="social-cube-wrapper facebook">
                         <div class="cube-face face-top"><i class="fab fa-facebook-f"></i></div>
                         <div class="cube-face face-front"></div><div class="cube-face face-right"></div>
                     </a>
-                    <a href="https://www.instagram.com/alien.tech.1/" target="_blank" class="social-cube-wrapper instagram">
+                    <a href="https://www.instagram.com/merriamamsi/" target="_blank" class="social-cube-wrapper instagram">
                         <div class="cube-face face-top"><i class="fab fa-instagram"></i></div>
                         <div class="cube-face face-front"></div><div class="cube-face face-right"></div>
                     </a>
@@ -665,7 +528,11 @@
     <script src="./files/main(1).js.download"></script>
     <script src="./files/script.js.download"></script>
 
-
+<div class="whats-chat">
+<a class="icon" href="https://api.whatsapp.com/send?phone=972598695954" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+</div>
 
 <div id="give-freely-root-bcjindcccaagfpapjjmafapmmgkkhgoa" class="give-freely-root" data-extension-id="bcjindcccaagfpapjjmafapmmgkkhgoa" data-extension-name="JSON Formatter" style="display: block;"><template shadowrootmode="open"><style>
   :host {
